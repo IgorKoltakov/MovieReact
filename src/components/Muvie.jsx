@@ -3,6 +3,7 @@ function Muvie(props) {
 
   const MuvImg = muvie.Poster
   const MuvName = muvie.title
+  
   return ( 
     <div className="card">
       <div className="card-image waves-effect waves-block waves-light">
