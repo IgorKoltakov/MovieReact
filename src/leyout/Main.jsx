@@ -1,22 +1,38 @@
 import React from 'react'
-import {Muvies} from 'C:/Users/Mavi/Desktop/programing/muvie/src/components/Muvies.jsx'
+import {Movies} from '../components/Movies'
+import {Preloader} from '../components/Preloader'
+import {Search} from '../components/Search'
 
 
 export default class Main extends React.Component {
-  state = { 
-    muv: []
+  constructor(props) {
+    super(props)
+    this.state = { 
+      movies: [],
+    }
   }
 
   componentDidMount() { 
-    fetch('http://www.omdbapi.com/?apikey=a74de10&s=matrix')
-    .then(response => response.json())
-    .then(data => this.setState({muv: data}))
-    .then(console.log('Feach complited'))
+    fetch(`http://www.omdbapi.com/?apikey=a74de10&s=matrix`)
+     .then(response => response.json())
+     .then(data => this.setState({movies: data.Search}))
+  }
+
+  SearchMovie = (search) => {
+    fetch(`http://www.omdbapi.com/?apikey=a74de10&s=${search}`)
+     .then(response => response.json())
+     .then(data => this.setState({movies: data.Search}))
   }
   
   render () {
+    const {movies} = this.state
+    
     return <main className="conteiner content">
-        <Muvies muvie={this.state.muv.Search} />
+        <Search SearchMovie={this.SearchMovie} />
+        {movies.length ? (
+        <Movies movie={this.state.movies} />
+      ) : <Preloader />}
+        
     </main>
   };
 }
