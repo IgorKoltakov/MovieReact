@@ -10,6 +10,7 @@ class Search extends React.Component {
       this.SearchRef = React.createRef()
   }  
 
+<<<<<<< HEAD
   HandleKey = (event) => {
     if (event.key === 'Enter') {
       this.props.SearchMovie(this.state.search)
@@ -21,6 +22,8 @@ class Search extends React.Component {
   }
 
 
+=======
+>>>>>>> 43cd07c751583dba207a079c5bf4ba3c695ca849
   render() {
     return <div className="row">
         <div className="col s12">
