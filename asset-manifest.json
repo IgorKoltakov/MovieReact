@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MovieReactgit%20/static/css/main.3714e570.css",
+    "main.js": "/MovieReactgit%20/static/js/main.aa101bda.js",
+    "index.html": "/MovieReactgit%20/index.html",
+    "main.3714e570.css.map": "/MovieReactgit%20/static/css/main.3714e570.css.map",
+    "main.aa101bda.js.map": "/MovieReactgit%20/static/js/main.aa101bda.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3714e570.css",
+    "static/js/main.aa101bda.js"
+  ]
+}
