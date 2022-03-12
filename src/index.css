@@ -7,27 +7,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-<<<<<<< HEAD
-=======
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
->>>>>>> 43cd07c751583dba207a079c5bf4ba3c695ca849
 nav {
   padding: 0 1rem;
 }
 
 .content {
   min-height: calc(100vh - 70px - 64px);
-<<<<<<< HEAD
-  padding: 1.5rem 10rem;
+  padding: 1.5rem 15rem;
 }
   
 .movies {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 0.3fr));
   gap: 1rem;
 }
 
@@ -36,13 +32,13 @@ nav {
   top: 0;
   right: 0.5rem;
 }
-=======
-  padding: 1.5rem 0;
+
+.input-radio {
+  background-color: red;
+  padding-left: 100px;
+  opacity: 1;
 }
 
-.movies {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1rem;
+label:not(:last-child) {
+  margin-right: 1rem;
 }
->>>>>>> 43cd07c751583dba207a079c5bf4ba3c695ca849
